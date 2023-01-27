@@ -1,0 +1,13 @@
+from tkinter import *
+wind = Tk()
+wind.geometry("300x600")
+wind.title("Color picker")
+fr = LabelFrame(text='change color',width=600,height=200)
+fr.pack(padx=3, pady=3)
+lf = LabelFrame(text='color',width=600,height=200)
+fr.pack(padx=3, pady=3)
+lb1=Label(lf,text='#000000')
+lb1.pack()
+red=Scale(orieng=HORIZONTAL,label='Red',length=200,activebackground='red',fg='green')
+green=Scale(orieng=HORIZONTAL,label='green',length=200,activebackground='green',fg='green')
+blue=Scale(orieng=HORIZONTAL,label='blue',length=200,activebackground='blue',fg='blue')
